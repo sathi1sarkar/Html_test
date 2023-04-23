@@ -8,28 +8,35 @@ $smob_max:767px;
 $smob_min:480px;
 $mob_max:479px;
 $mob_min:240px;
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 img {
     width: 100%;
 }
+
 #header {
     .navbar {
         @media (min-width: $mob_min) and (max-width: $tab_min) {
             flex-direction: row-reverse;
-         }
+        }
+
         .mob-dropdown {
             display: none;
+
             @media (min-width: $mob_min) and (max-width: $tab_min) {
                 display: block;
-             }
+            }
+
             .dropdown {
                 .btn {
                     background-color: #000;
@@ -37,45 +44,63 @@ img {
                     font-size: 13px;
                     border-radius: 0;
                 }
+
+                @media (min-width: $mob_min) and (max-width: $tab_min) {
+                    .dropdown-menu {
+                        left: auto !important;
+                        right: 0 !important;
+                    }
+                }
+
             }
         }
+
         .navbar-toggler {
             i {
                 color: #000;
-                &:focus{
+
+                &:focus {
                     box-shadow: none !important;
                     outline: 0;
                 }
             }
         }
-        .navbar-brand{
+
+        .navbar-brand {
             width: 18%;
             text-align: center;
+
             a {
                 text-decoration: none;
+
                 .logo {
                     color: #000;
                 }
             }
         }
+
         .navbar-nav {
             .nav-item {
                 padding-left: 2.3rem;
                 padding-right: 3rem;
+
                 @media (max-width: $tab_max) {
                     padding-left: 21px;
                     padding-right: 0rem;
-                 }
+                }
+
                 .nav-link {
                     font-size: 13px;
                     font-weight: 600;
                     color: #221F20;
                     text-transform: uppercase;
                 }
+
                 .dropdown {
                     @media (min-width: $mob_min) and (max-width: $tab_min) {
                         display: none;
-                     }
+                    }
+
                     .btn {
                         background-color: #000;
                         color: #fff;
@@ -84,12 +109,15 @@ img {
                     }
                 }
             }
+
             .nav-items {
                 padding-left: 1rem;
                 padding-right: 1rem;
+
                 @media (min-width: $mob_min) and (max-width: $tab_min) {
                     margin-top: 10px;
-                 }
+                }
+
                 .nav-link {
                     font-size: 13px;
                     font-weight: 600;
@@ -99,51 +127,65 @@ img {
                 }
             }
         }
+
         .navbar-menu {
             position: relative;
             list-style: none;
             text-align: center;
             display: none;
             padding-left: 0;
+
             @media (min-width: $mob_min) and (max-width: $tab_min) {
                 display: block;
-             }
+            }
+
             .nav-item {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 line-height: 30px;
-                .nav-link{
+
+                .nav-link {
                     font-size: 13px;
                     font-weight: 600;
                     color: #221F20;
-                    text-transform: uppercase; 
+                    text-transform: uppercase;
                 }
+
                 img {
                     position: absolute;
                     top: 20px;
                     width: 18%;
+                    z-index: -1;
                     @media (max-width: $tab_max) {
                         top: 19px;
                         width: 7%;
-                     }
-                     @media (min-width: $mob_min) and (max-width: $tab_min) {
-                        top: 20px;
-                        width: 12%;
-                     }
+                    }
+                    @media (max-width: $tab_min) {
+                        top: 19px;
+                        width: 7%;
+                    }
+
+                    @media (min-width: $mob_min) and (max-width: $smob_min){
+                        top: 18px;
+                        width: 14%;
+                    }
                 }
+
                 .btn {
                     color: #fff;
                     border-radius: 0;
                     padding: 13px 21px;
                 }
-                
+
             }
-            .user{
+
+            .user {
                 color: #fff;
                 border-radius: 0;
             }
+
             .cart {
                 color: #fff;
                 border-radius: 0;
@@ -154,80 +196,102 @@ img {
 
 #banner {
     .banner_container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 3rem;
-      .left-content{
-        position: relative;
-        margin-top: 4rem;
-        @media (min-width: $mob_min) and (max-width: $tab_min) {
-            margin-top: 2rem;
-         }
-        @media (max-width: $tab_min) {
-          text-align: center;
-         }
-         @media (min-width: $mob_min) and (max-width: $smob_min) {
-            margin-top: 0;
-            margin-bottom: 1rem;
-            text-align: center;
-         }
-        h1 {
-            text-transform: uppercase;
-            font-size: 33px;
-            line-height: 51px;
-            @media (max-width: $tab_max) {
-                font-size: 24px;
-                line-height: 38px;
-                font-weight: 600;
-             }
-             @media (max-width: $tab_min) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+
+        .left-content {
+            position: relative;
+            margin-top: 4rem;
+
+            @media (min-width: $mob_min) and (max-width: $tab_min) {
+                margin-top: 2rem;
+            }
+
+            @media (max-width: $tab_min) {
+                text-align: center;
+            }
+
+            @media (min-width: $mob_min) and (max-width: $smob_min) {
+                margin-top: 0;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            h1 {
+                text-transform: uppercase;
                 font-size: 33px;
                 line-height: 51px;
-             }
-             @media (min-width: $mob_min) and (max-width: $smob_min) {
-                font-size: 24px;
-                line-height: 38px;
-             }
-          }
-          img {
-            position: absolute;
-            top: 37px;
-            z-index: -1;
-            width: 67%;
-            right: 0;
-            @media (max-width: $tab_max) {
+
+                @media (max-width: $tab_max) {
+                    font-size: 24px;
+                    line-height: 38px;
+                    font-weight: 600;
+                }
+
+                @media (max-width: $tab_min) {
+                    font-size: 33px;
+                    line-height: 51px;
+                }
+
+                @media (min-width: $mob_min) and (max-width: $smob_min) {
+                    font-size: 24px;
+                    line-height: 38px;
+                }
+            }
+
+            .image {
                 position: absolute;
+                top: 37px;
                 z-index: -1;
-                width: 73%;
-                top: 64px;
-                right: 61px;
-             }
-             @media (max-width: $tab_min) {
-                position: absolute;
-                z-index: -1;
-                width: 27%;
-                top: -8px;
-                right: 64px;
-             }
-             @media (min-width: $mob_min) and (max-width: $smob_min) {
-                position: absolute;
-                z-index: -1;
-                width: 44%;
-                top: 32%;
-                right: 99px;
-             }
-          }
-      }
-      .right-content {
-        margin-top: 11rem;
-        @media (min-width: $mob_min) and (max-width: $tab_min) {
-            margin-top: 3rem;
-         }
-        p {
-            text-align: justify;
-          }
-      }
-      
+                width: 67%;
+                right: 0;
+
+                @media (max-width: $tab_max) {
+                    position: absolute;
+                    z-index: -1;
+                    width: 73%;
+                    top: 64px;
+                    right: 61px;
+                }
+
+                @media (max-width: $tab_min) {
+                    position: absolute;
+                    z-index: -1;
+                    width: 27%;
+                    top: -8px;
+                    right: 64px;
+                }
+
+                @media (min-width: 375px) and (max-width: 480px) {
+                    position: absolute;
+                    z-index: -1;
+                    width: 44%;
+                    top: 32%;
+                    right: 99px;
+                }
+                @media (max-width: 320px) {
+                    position: absolute;
+                    z-index: -1;
+                    width: 46%;
+                    top: 37%;
+                    right: 73px;
+                }
+            }
+        }
+
+        .right-content {
+            margin-top: 11rem;
+
+            @media (min-width: $mob_min) and (max-width: $tab_min) {
+                margin-top: 3rem;
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+
     }
 }
