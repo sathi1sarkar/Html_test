@@ -40,6 +40,13 @@ img {
   border-radius: 0;
 }
 
+@media (min-width: 240px) and (max-width: 768px) {
+  #header .navbar .mob-dropdown .dropdown .dropdown-menu {
+    left: auto !important;
+    right: 0 !important;
+  }
+}
+
 #header .navbar .navbar-toggler i {
   color: #000;
 }
@@ -156,6 +163,7 @@ img {
   position: absolute;
   top: 20px;
   width: 18%;
+  z-index: -1;
 }
 
 @media (max-width: 1024px) {
@@ -165,10 +173,17 @@ img {
   }
 }
 
-@media (min-width: 240px) and (max-width: 768px) {
+@media (max-width: 768px) {
   #header .navbar .navbar-menu .nav-item img {
-    top: 20px;
-    width: 12%;
+    top: 19px;
+    width: 7%;
+  }
+}
+
+@media (min-width: 240px) and (max-width: 480px) {
+  #header .navbar .navbar-menu .nav-item img {
+    top: 18px;
+    width: 14%;
   }
 }
 
@@ -254,7 +269,7 @@ img {
   }
 }
 
-#banner .banner_container .left-content img {
+#banner .banner_container .left-content .image {
   position: absolute;
   top: 37px;
   z-index: -1;
@@ -263,7 +278,7 @@ img {
 }
 
 @media (max-width: 1024px) {
-  #banner .banner_container .left-content img {
+  #banner .banner_container .left-content .image {
     position: absolute;
     z-index: -1;
     width: 73%;
@@ -273,7 +288,7 @@ img {
 }
 
 @media (max-width: 768px) {
-  #banner .banner_container .left-content img {
+  #banner .banner_container .left-content .image {
     position: absolute;
     z-index: -1;
     width: 27%;
@@ -282,13 +297,23 @@ img {
   }
 }
 
-@media (min-width: 240px) and (max-width: 480px) {
-  #banner .banner_container .left-content img {
+@media (min-width: 375px) and (max-width: 480px) {
+  #banner .banner_container .left-content .image {
     position: absolute;
     z-index: -1;
     width: 44%;
     top: 32%;
     right: 99px;
+  }
+}
+
+@media (max-width: 320px) {
+  #banner .banner_container .left-content .image {
+    position: absolute;
+    z-index: -1;
+    width: 46%;
+    top: 37%;
+    right: 73px;
   }
 }
 
