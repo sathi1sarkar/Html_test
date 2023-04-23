@@ -1,0 +1,308 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+@media (min-width: 240px) and (max-width: 768px) {
+  #header .navbar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+#header .navbar .mob-dropdown {
+  display: none;
+}
+
+@media (min-width: 240px) and (max-width: 768px) {
+  #header .navbar .mob-dropdown {
+    display: block;
+  }
+}
+
+#header .navbar .mob-dropdown .dropdown .btn {
+  background-color: #000;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 0;
+}
+
+#header .navbar .navbar-toggler i {
+  color: #000;
+}
+
+#header .navbar .navbar-toggler i:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: 0;
+}
+
+#header .navbar .navbar-brand {
+  width: 18%;
+  text-align: center;
+}
+
+#header .navbar .navbar-brand a {
+  text-decoration: none;
+}
+
+#header .navbar .navbar-brand a .logo {
+  color: #000;
+}
+
+#header .navbar .navbar-nav .nav-item {
+  padding-left: 2.3rem;
+  padding-right: 3rem;
+}
+
+@media (max-width: 1024px) {
+  #header .navbar .navbar-nav .nav-item {
+    padding-left: 21px;
+    padding-right: 0rem;
+  }
+}
+
+#header .navbar .navbar-nav .nav-item .nav-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: #221F20;
+  text-transform: uppercase;
+}
+
+@media (min-width: 240px) and (max-width: 768px) {
+  #header .navbar .navbar-nav .nav-item .dropdown {
+    display: none;
+  }
+}
+
+#header .navbar .navbar-nav .nav-item .dropdown .btn {
+  background-color: #000;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 0;
+}
+
+#header .navbar .navbar-nav .nav-items {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 240px) and (max-width: 768px) {
+  #header .navbar .navbar-nav .nav-items {
+    margin-top: 10px;
+  }
+}
+
+#header .navbar .navbar-nav .nav-items .nav-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 11px 17px;
+}
+
+#header .navbar .navbar-menu {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  display: none;
+  padding-left: 0;
+}
+
+@media (min-width: 240px) and (max-width: 768px) {
+  #header .navbar .navbar-menu {
+    display: block;
+  }
+}
+
+#header .navbar .navbar-menu .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 30px;
+}
+
+#header .navbar .navbar-menu .nav-item .nav-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: #221F20;
+  text-transform: uppercase;
+}
+
+#header .navbar .navbar-menu .nav-item img {
+  position: absolute;
+  top: 20px;
+  width: 18%;
+}
+
+@media (max-width: 1024px) {
+  #header .navbar .navbar-menu .nav-item img {
+    top: 19px;
+    width: 7%;
+  }
+}
+
+@media (min-width: 240px) and (max-width: 768px) {
+  #header .navbar .navbar-menu .nav-item img {
+    top: 20px;
+    width: 12%;
+  }
+}
+
+#header .navbar .navbar-menu .nav-item .btn {
+  color: #fff;
+  border-radius: 0;
+  padding: 13px 21px;
+}
+
+#header .navbar .navbar-menu .user {
+  color: #fff;
+  border-radius: 0;
+}
+
+#header .navbar .navbar-menu .cart {
+  color: #fff;
+  border-radius: 0;
+}
+
+#banner .banner_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3rem;
+}
+
+#banner .banner_container .left-content {
+  position: relative;
+  margin-top: 4rem;
+}
+
+@media (min-width: 240px) and (max-width: 768px) {
+  #banner .banner_container .left-content {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #banner .banner_container .left-content {
+    text-align: center;
+  }
+}
+
+@media (min-width: 240px) and (max-width: 480px) {
+  #banner .banner_container .left-content {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
+#banner .banner_container .left-content h1 {
+  text-transform: uppercase;
+  font-size: 33px;
+  line-height: 51px;
+}
+
+@media (max-width: 1024px) {
+  #banner .banner_container .left-content h1 {
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 768px) {
+  #banner .banner_container .left-content h1 {
+    font-size: 33px;
+    line-height: 51px;
+  }
+}
+
+@media (min-width: 240px) and (max-width: 480px) {
+  #banner .banner_container .left-content h1 {
+    font-size: 24px;
+    line-height: 38px;
+  }
+}
+
+#banner .banner_container .left-content img {
+  position: absolute;
+  top: 37px;
+  z-index: -1;
+  width: 67%;
+  right: 0;
+}
+
+@media (max-width: 1024px) {
+  #banner .banner_container .left-content img {
+    position: absolute;
+    z-index: -1;
+    width: 73%;
+    top: 64px;
+    right: 61px;
+  }
+}
+
+@media (max-width: 768px) {
+  #banner .banner_container .left-content img {
+    position: absolute;
+    z-index: -1;
+    width: 27%;
+    top: -8px;
+    right: 64px;
+  }
+}
+
+@media (min-width: 240px) and (max-width: 480px) {
+  #banner .banner_container .left-content img {
+    position: absolute;
+    z-index: -1;
+    width: 44%;
+    top: 32%;
+    right: 99px;
+  }
+}
+
+#banner .banner_container .right-content {
+  margin-top: 11rem;
+}
+
+@media (min-width: 240px) and (max-width: 768px) {
+  #banner .banner_container .right-content {
+    margin-top: 3rem;
+  }
+}
+
+#banner .banner_container .right-content p {
+  text-align: justify;
+}
+/*# sourceMappingURL=style.css.map */
