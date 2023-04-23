@@ -249,7 +249,7 @@ img {
 
 @media (max-width: 1024px) {
   #banner .banner_container .left-content h1 {
-    font-size: 24px;
+    font-size: 23px;
     line-height: 38px;
     font-weight: 600;
   }
@@ -281,29 +281,15 @@ img {
   #banner .banner_container .left-content .image {
     position: absolute;
     z-index: -1;
-    width: 73%;
-    top: 64px;
-    right: 61px;
+    width: 63%;
+    top: 30px;
+    right: 7px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 240px) and (max-width: 768px) {
   #banner .banner_container .left-content .image {
-    position: absolute;
-    z-index: -1;
-    width: 27%;
-    top: -8px;
-    right: 64px;
-  }
-}
-
-@media (min-width: 240px) and (max-width: 480px) {
-  #banner .banner_container .left-content .image {
-    position: absolute;
-    z-index: -1;
-    width: 44%;
-    top: 32%;
-    right: 99px;
+    display: none;
   }
 }
 
