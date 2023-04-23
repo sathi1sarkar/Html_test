@@ -287,7 +287,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   #banner .banner_container .left-content .image {
     position: absolute;
     z-index: -1;
@@ -297,23 +297,13 @@ img {
   }
 }
 
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 240px) and (max-width: 480px) {
   #banner .banner_container .left-content .image {
     position: absolute;
     z-index: -1;
     width: 44%;
     top: 32%;
     right: 99px;
-  }
-}
-
-@media (max-width: 320px) {
-  #banner .banner_container .left-content .image {
-    position: absolute;
-    z-index: -1;
-    width: 46%;
-    top: 37%;
-    right: 73px;
   }
 }
 

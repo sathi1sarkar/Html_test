@@ -256,7 +256,7 @@ img {
                     right: 61px;
                 }
 
-                @media (max-width: $tab_min) {
+                @media (min-width: $tab_min) and (max-width: $tab_maxi) {
                     position: absolute;
                     z-index: -1;
                     width: 27%;
@@ -264,20 +264,14 @@ img {
                     right: 64px;
                 }
 
-                @media (min-width: 375px) and (max-width: 480px) {
+                @media (min-width: $mob_min) and (max-width: $smob_min) {
                     position: absolute;
                     z-index: -1;
                     width: 44%;
                     top: 32%;
                     right: 99px;
                 }
-                @media (max-width: 320px) {
-                    position: absolute;
-                    z-index: -1;
-                    width: 46%;
-                    top: 37%;
-                    right: 73px;
-                }
+             
             }
         }
 
