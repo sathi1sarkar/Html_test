@@ -225,7 +225,7 @@ img {
                 line-height: 51px;
 
                 @media (max-width: $tab_max) {
-                    font-size: 24px;
+                    font-size: 23px;
                     line-height: 38px;
                     font-weight: 600;
                 }
@@ -248,28 +248,17 @@ img {
                 width: 67%;
                 right: 0;
 
-                @media (max-width: $tab_max) {
-                    position: absolute;
-                    z-index: -1;
-                    width: 73%;
-                    top: 64px;
-                    right: 61px;
+                @media (max-width: $tab_max) {           
+                position: absolute;
+                z-index: -1;
+                width: 63%;
+                top: 30px;
+                right: 7px;
+
                 }
 
-                @media (min-width: $tab_min) and (max-width: $tab_maxi) {
-                    position: absolute;
-                    z-index: -1;
-                    width: 27%;
-                    top: -8px;
-                    right: 64px;
-                }
-
-                @media (min-width: $mob_min) and (max-width: $smob_min) {
-                    position: absolute;
-                    z-index: -1;
-                    width: 44%;
-                    top: 32%;
-                    right: 99px;
+                @media (min-width: $mob_min) and (max-width: $tab_min) {
+                  display: none;
                 }
              
             }
